@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media_Query</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            /* flex-wrap: wrap; For responsive design */
+            max-width: 1200px;
+            margin: 0 auto; /* center align  */
+              
+           
+        }
+        .food{
+            
+            border: 3px solid forestgreen;
+            border-radius: 5px;
+            margin: 10px;
+            width: 350px;
+        }
+        .food img{
+            width: 100%;
+        }
+        /* For responsive design  */
+         @media (max-width: 760px) {
+            .container{
+                flex-direction: column;
+            }
+            .container .food{
+            background-color: chartreuse;
+            }
+        }
+        @media (min-width: 1200px) {
+            
+            .container .food{
+            background-color: seagreen;
+            }
+        } 
+    </style>
+</head>
+<body>
+    <!-- Shortcut Command:  div.container>div.food*6>img[src="media/food.png"]+p>lorem40 -->
+    <div class="container">
+        <div class="food">
+            <img src="media/food.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptatem officiis fugiat nam et enim illo quasi ullam atque, dicta excepturi quae, voluptatibus maxime, ratione sapiente! Alias, at quis! Non quaerat cupiditate quisquam maiores perspiciatis! Magnam temporibus sapiente natus voluptas?</p>
+        </div>
+        <div class="food">
+            <img src="media/food.png" alt="">
+            <p>Accusamus quidem quod, provident mollitia nihil saepe, quibusdam impedit esse amet maiores nostrum molestias eos! Iste tenetur saepe repellendus veniam dolor tempore eveniet voluptatem repudiandae, corrupti odio hic dolore animi nostrum minima, dolorum iusto cumque pariatur quaerat illum! Quisquam, rem.</p>
+        </div>
+        <div class="food">
+            <img src="media/food.png" alt="">
+            <p>Modi iure dolor rerum. Pariatur explicabo vel adipisci, officiis odit veritatis praesentium odio fuga eveniet unde quas perferendis repellendus et a cum deserunt aut iure est. Quas, blanditiis alias veritatis, esse eaque cupiditate sequi ad sunt eligendi, impedit reprehenderit ipsa?</p>
+        </div>
+        <div class="food">
+            <img src="media/food.png" alt="">
+            <p>Mollitia commodi enim incidunt inventore impedit, veritatis, reprehenderit sit deleniti aspernatur deserunt, id ut et animi! Optio illum, dolore maiores sequi quae mollitia voluptas unde facilis alias totam ratione ducimus expedita aliquam beatae dolores quam laudantium quas accusantium obcaecati nesciunt.</p>
+        </div>
+        <div class="food">
+            <img src="media/food.png" alt="">
+            <p>Modi quisquam obcaecati cupiditate magni suscipit qui quae, consectetur debitis dolor, aliquid aspernatur quos blanditiis at. Architecto qui a reiciendis tempore asperiores eum ratione obcaecati laudantium, ab iste veniam quaerat quae dolore praesentium enim velit fuga natus dolorem? Eos, illum?</p>
+        </div>
+        <div class="food">
+            <img src="media/food.png" alt="">
+            <p>Voluptate necessitatibus alias aliquam molestias hic nostrum mollitia quisquam at deleniti quod, obcaecati ratione esse qui, similique tenetur optio! Omnis tenetur possimus assumenda ipsam quisquam at adipisci hic. Impedit, sit. Ipsum sequi porro culpa, corporis odio modi molestiae quia dolorum.</p>
+        </div>
+    </div>
+</body>
+</html>
